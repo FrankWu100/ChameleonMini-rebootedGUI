@@ -2361,6 +2361,9 @@ namespace ChameleonMiniGUI
                 case 164:
                     SendCommandWithoutResult($"CONFIG{_cmdExtension}=MF_ULTRALIGHT_EV1_164B");
                     break;
+                case 540:
+                    SendCommandWithoutResult($"CONFIG{_cmdExtension}=MF_ULTRALIGHT_NTAG_215");
+                    break;
                 default:
                     SendCommandWithoutResult(IdentifyUIDSize(dump.Data) == 7 ? $"CONFIG{_cmdExtension}=MF_CLASSIC_1K_7B" : $"CONFIG{_cmdExtension}=MF_CLASSIC_1K");
                     break;
